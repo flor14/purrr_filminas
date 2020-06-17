@@ -1,5 +1,5 @@
 ---
-title: "Manejo automatizado de archivos con purrr"
+title: "Manejo automatizado de archivos"
 subtitle: "Clase de 15' para la certificación de R-Studio"
 author: "Florencia D'Andrea"
 institute: "🐦cantoflor_87"
@@ -97,13 +97,13 @@ class: inverse, center, middle
 
 # Demo #1 💻
 
-#### 1. Construi un vector con `nombres de archivos` sobre los cuales iterar
+#### 1. Construí un vector con `nombres de archivos` sobre los cuales iterar
 #### 2. Seleccioná una `función` para leer los archivos
 #### 3. Chequea el número de `argumentos` que la función necesita
 #### 4. Elegí entre `map()`/`map2()`/`pmap()`
 #### 5. Elegi un sufijo para  `map_*()` en relación al output deseado
 
-File `live_coding.R` in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class/master?urlpath=rstudio)
+Archivo `live_coding.R` en [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class/master?urlpath=rstudio)
 
 ---
 
@@ -116,9 +116,9 @@ class: inverse, center, middle
 
 class: inverse, center, middle
 
-### 1. Obtener un único dataframe de multiples archivos
+### 1. Obtener un único dataframe de múltiples archivos
  
-### 👉 <span style="color: #f2cc9d;">2. AAutomatizar la creación de reportes</span> 
+### 👉 <span style="color: #f2cc9d;">2. Automatizar la creación de reportes</span> 
 ---
 
 ### Iterar usando una funcion por sus efectos colaterales
@@ -155,7 +155,7 @@ knitr::include_graphics("rmd.png")
 
 ---
 
-### RMarkdown Template file
+### Archivo Plantilla de RMarkdown 
 
 Incluí parámetros en el código
 
@@ -174,7 +174,7 @@ knitr::include_graphics("7_eng.png")
 
 ---
 
-### `pwalk()` 🧶😺
+### Función `pwalk()` 🧶😺
 
 ```{r final, echo = FALSE}
 knitr::include_graphics("final_scheme.png")
@@ -199,5 +199,5 @@ class: center, middle
 
 ### 😺🧶😺🧶😺🧶
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+Filminas creadas con el paquete de R [**xaringan**](https://github.com/yihui/xaringan).
 

@@ -1,6 +1,6 @@
 ---
-title: "Automatized files managment"
-subtitle: "15' class for the R-Studio Certification"
+title: "Manejo automatizado de archivos con purrr"
+subtitle: "Clase de 15' para la certificación de R-Studio"
 author: "Florencia D'Andrea"
 institute: "🐦cantoflor_87"
 output:
@@ -33,30 +33,30 @@ library("showtext")
 
 class: center, middle
 
-# Iteration with purrr package
+# Iteración con el paquete purrr
 
-### for automatized files management 
+### para el manejo automatizado de archivos
 
 ### 📄🐱
 
 ---
 class: inverse, center, middle
 
-### 1. Obtain a dataframe from multiple files
+### 1. Obtener un único dataframe de multiples archivos
  
-### 2. Automatize report generation
+### 2. Automatizar la creación de reportes
 
 
 ---
 class: inverse, center, middle
 
-### 👉<span style="color: #f2cc9d;">1. Obtain a dataframe from multiple files</span> 
+### 👉<span style="color: #f2cc9d;">1. OObtener un único dataframe de multiples archivos</span> 
  
-### 2. Automatize report generation
+### 2. Automatizar la creación de reportes
 
 ---
 
-### Read files using `map_df()`
+### Leer archivos usando `map_df()`
 
 ```{r one, echo = FALSE}
 knitr::include_graphics("1_eng.png")
@@ -64,7 +64,7 @@ knitr::include_graphics("1_eng.png")
 
 ---
 
-### Read files using `map_df()`
+### Leer archivos usando `map_df()`
 
 ```{r two, echo = FALSE}
 knitr::include_graphics("2_eng.png")
@@ -72,15 +72,15 @@ knitr::include_graphics("2_eng.png")
 
 ---
 
-### Read files using `map_df()`
+### Leer archivos usando `map_df()`
 
 ```{r three, echo = FALSE}
 knitr::include_graphics("3_eng.png")
 ```
 
 ---
-# Let’s practise 💪
-### Which function would you use to obtain these return values?
+# Practiquemos 💪
+### ¿Qué función usarías para obtener los siguientes valores de retorno?
 
 1. `map()`
 2. `map_df()`
@@ -95,13 +95,13 @@ knitr::include_graphics("4_eng.png")
 ---
 class: inverse, center, middle
 
-# Live coding #1 💻
+# Demo #1 💻
 
-#### 1. Build a vector of `filenames` you want to iterate over
-#### 2. Select a `function` to read the files 
-#### 3. Check the number of `arguments` the function needs
-#### 4. Select among `map()`/`map2()`/`pmap()`
-#### 5. Select a `map_*()` suffix in relation to the *desired output*
+#### 1. Construi un vector con `nombres de archivos` sobre los cuales iterar
+#### 2. Seleccioná una `función` para leer los archivos
+#### 3. Chequea el número de `argumentos` que la función necesita
+#### 4. Elegí entre `map()`/`map2()`/`pmap()`
+#### 5. Elegi un sufijo para  `map_*()` en relación al output deseado
 
 File `live_coding.R` in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class/master?urlpath=rstudio)
 
@@ -109,26 +109,26 @@ File `live_coding.R` in [![Binder](https://mybinder.org/badge_logo.svg)](https:/
 
 class: inverse, center, middle
 
-### 1. Obtain a dataframe from multiple files
+### 1. Obtener un único dataframe de multiples archivos
  
-### 2. Automatize report generation 
+### 2. Automatizar la creación de reportes 
 ---
 
 class: inverse, center, middle
 
-### 1. Obtain a dataframe from multiple files
+### 1. Obtener un único dataframe de multiples archivos
  
-### 👉 <span style="color: #f2cc9d;">2. Automatize report generation</span> 
+### 👉 <span style="color: #f2cc9d;">2. AAutomatizar la creación de reportes</span> 
 ---
 
-### Iterate using a function for its side effects
+### Iterar usando una funcion por sus efectos colaterales
 
 ```{r five, echo = FALSE}
 knitr::include_graphics("5_eng.png")
 ```
 
 ---
-### `purrr::walk()` family of functions
+### Función `purrr::walk()` 
 
 ```{r six, echo = FALSE, out.width=500}
 knitr::include_graphics("6_eng.png")
@@ -136,14 +136,15 @@ knitr::include_graphics("6_eng.png")
 
 ---
 
-# Let´s practise 💪
-### Which of these functions you would use with walk() family of functions?
+# Practiquemos 💪
+### Cuál de estas funciones usarías con la familia de funciones walk()?
 1. `purrr::safely()`
 2. `~ggplot(., aes(mpg, wt)) + geom_point()`
 3. `rmarkdown::render()`
 4. `~list(name = .)`
 
-Can you explain your choice on using `map()` or `walk()` to iterate with these functions?
+¿Podés explicar la elección de usar `map()` o `walk()` para iterar con estas funciones?
+
 ---
 
 ### RMarkdown 🧶 
@@ -156,7 +157,7 @@ knitr::include_graphics("rmd.png")
 
 ### RMarkdown Template file
 
-Add parameters 
+Incluí parámetros en el código
 
 ```{r eight, echo = FALSE}
 knitr::include_graphics("yaml.png")
@@ -165,7 +166,7 @@ knitr::include_graphics("yaml.png")
 
 ---
 
-### Automatization of report generation
+### Automatización de la creación de reportes
 
 ```{r seven, echo = FALSE}
 knitr::include_graphics("7_eng.png")
@@ -173,7 +174,7 @@ knitr::include_graphics("7_eng.png")
 
 ---
 
-### `pwalk()` function 🧶😺
+### `pwalk()` 🧶😺
 
 ```{r final, echo = FALSE}
 knitr::include_graphics("final_scheme.png")
@@ -183,18 +184,18 @@ knitr::include_graphics("final_scheme.png")
 
 class: inverse, center, middle
 
-# Live coding #2 💻
+# Demo #2 💻
 
-Get your own series of reports!
+¡Obtene tu propia serie de reportes!
 
-File `live_coding.R` in
+Archivo `live_coding.R` en
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class/master?urlpath=rstudio)
 
 ---
 
 class: center, middle
 
-# Thanks!
+# ¡Gracias!
 
 ### 😺🧶😺🧶😺🧶
 

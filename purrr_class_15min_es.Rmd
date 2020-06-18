@@ -1,6 +1,6 @@
 ---
 title: "Manejo automatizado de archivos"
-subtitle: "Clase de 15' para la certificación de R-Studio"
+subtitle: "Mini-clase para la certificación de R-Studio"
 author: "Florencia D'Andrea"
 institute: "🐦cantoflor_87"
 output:
@@ -50,7 +50,7 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-### 👉<span style="color: #f2cc9d;">1. OObtener un único dataframe de multiples archivos</span> 
+### 👉<span style="color: #f2cc9d;">1. Obtener un único dataframe de multiples archivos</span> 
  
 ### 2. Automatizar la creación de reportes
 
@@ -130,7 +130,7 @@ knitr::include_graphics("5_eng.png")
 ---
 ### Función `purrr::walk()` 
 
-```{r six, echo = FALSE, out.width=500}
+```{r six, echo = FALSE, out.width=800}
 knitr::include_graphics("6_eng.png")
 ```
 
@@ -155,9 +155,9 @@ knitr::include_graphics("rmd.png")
 
 ---
 
-### Archivo Plantilla de RMarkdown 
+### Plantilla de RMarkdown 
 
-Incluí parámetros en el código
+Incluí los parámetros a reemplazar en el código
 
 ```{r eight, echo = FALSE}
 knitr::include_graphics("yaml.png")

@@ -72,7 +72,7 @@ knitr::include_graphics("2_eng.png")
 
 ---
 
-### Leer archivos usando `map_df()`
+### Valor de retorno: dataframe
 
 ```{r three, echo = FALSE}
 knitr::include_graphics("3_eng.png")
@@ -121,7 +121,7 @@ class: inverse, center, middle
 ### 👉 <span style="color: #f2cc9d;">2. Automatizar la creación de reportes</span> 
 ---
 
-### Iterar usando una funcion por sus efectos colaterales
+### Iterar usando una funcion por sus "efectos secundarios" (_side effects_)
 
 ```{r five, echo = FALSE}
 knitr::include_graphics("5_eng.png")

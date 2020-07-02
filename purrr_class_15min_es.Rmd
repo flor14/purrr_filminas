@@ -1,6 +1,6 @@
 ---
 title: "Manejo automatizado de archivos"
-subtitle: "Mini-clase para la certificación de R-Studio"
+subtitle: "Mini-clase para la certificación de RStudio"
 author: "Florencia D'Andrea"
 institute: "🐦cantoflor_87"
 output:
